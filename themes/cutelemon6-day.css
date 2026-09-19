@@ -1,0 +1,48 @@
+/* cutelemon6-day | Cutelemon6 Trio | 16 px body */
+@import url("cutelemon6/fonts-sans.css");
+@import url("cutelemon6/base.css");
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #30363d;
+  --cutelemon6-heading: #24292f;
+  --cutelemon6-chapter: #24292f;
+  --cutelemon6-link: #0f6b68;
+  --cutelemon6-muted: #626b76;
+  --cutelemon6-border: #e0e4e8;
+  --cutelemon6-surface: #f5f7f9;
+  --cutelemon6-row: #fafbfc;
+  --cutelemon6-highlight: #fff0b5;
+  --side-bar-bg-color: #f7f8fa;
+  --control-text-color: #4d5661;
+  --control-text-hover-color: #24292f;
+  --active-file-bg-color: #e8efee;
+  --active-file-text-color: #1c5552;
+  --active-file-border-color: #0f6b68;
+  --item-hover-bg-color: #edf1f4;
+  --item-hover-text-color: #24292f;
+  --primary-color: #0f6b68;
+  --primary-btn-border-color: #0f6b68;
+  --primary-btn-text-color: #ffffff;
+  --select-text-bg-color: #cfe7e5;
+  --select-text-font-color: #1e3231;
+  --md-char-color: #89919b;
+  --meta-content-color: #626b76;
+  --search-hit-bg-color: #fff0b5;
+  --search-select-bg-color: #f0d875;
+  --rawblock-edit-panel-bd: #e0e4e8;
+  --rawblock-edit-panel-bg-color: #f5f7f9;
+  --cutelemon6-code-comment: #66717d;
+  --cutelemon6-code-keyword: #7751a8;
+  --cutelemon6-code-string: #2d6b4b;
+  --cutelemon6-code-number: #945318;
+  --cutelemon6-code-function: #275f8c;
+  --cutelemon6-code-error: #a3353b;
+  --cutelemon6-body-font: "Cutelemon6 Open Sans","Cutelemon6 Sans Han","PingFang SC",sans-serif;
+  --cutelemon6-heading-font: "Cutelemon6 Open Sans Heading","Cutelemon6 Sans Han","PingFang SC",sans-serif;
+  --cutelemon6-body-weight: 400;
+  --cutelemon6-heading-weight: 500;
+  --cutelemon6-strong-weight: 700;
+  --cutelemon6-line-height: 1.65;
+  --window-border: 1px solid var(--cutelemon6-border);
+}

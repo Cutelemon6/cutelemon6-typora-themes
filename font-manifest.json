@@ -1,0 +1,122 @@
+[
+  {
+    "file": "themes/cutelemon6/fonts/source-han-sans-regular.otf",
+    "upstream_url": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-sans@release/SubsetOTF/CN/SourceHanSansCN-Regular.otf",
+    "version": "Version 2.005;addfeatures 5.0.0b21",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "e2bc8a2e7f37474b774fff8db758681ece40bb6947a90d571bce9dd60671a8e4",
+    "family": "Source Han Sans CN",
+    "copyright": "© 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "mapped_characters": 30926
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-han-sans-medium.otf",
+    "upstream_url": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-sans@release/SubsetOTF/CN/SourceHanSansCN-Medium.otf",
+    "version": "Version 2.005;addfeatures 5.0.0b21",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "a94e558a2fe972bee4f46bce0843abff37063fd68c33f1e7d9058f6f09432b01",
+    "family": "Source Han Sans CN Medium",
+    "copyright": "© 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "mapped_characters": 30926
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-han-sans-bold.otf",
+    "upstream_url": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-sans@release/SubsetOTF/CN/SourceHanSansCN-Bold.otf",
+    "version": "Version 2.005;addfeatures 5.0.0b21",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "62383707c086a32f3afd5e293f34c7eff64c7fea31f579fdc6cbe34d920519a6",
+    "family": "Source Han Sans CN",
+    "copyright": "© 2014-2025 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "mapped_characters": 30926
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-han-serif-medium.otf",
+    "upstream_url": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/SubsetOTF/CN/SourceHanSerifCN-Medium.otf",
+    "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "f7906890686d17e122980efd2d6097d1caefed76312994baeaf220819e818f3a",
+    "family": "Source Han Serif CN Medium",
+    "copyright": "© 2017-2024 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "mapped_characters": 30930
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-han-serif-semibold.otf",
+    "upstream_url": "https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-serif@release/SubsetOTF/CN/SourceHanSerifCN-SemiBold.otf",
+    "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "50d3f12201ce2dd840650b6bfa47ebb8572ecf767eec0e5ccb20a247b5bfa805",
+    "family": "Source Han Serif CN SemiBold",
+    "copyright": "© 2017-2024 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+    "mapped_characters": 30930
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-serif-text-regular.woff2",
+    "upstream_url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/WOFF2/TTF/SourceSerif4-Regular.ttf.woff2",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "6b053e98f0838afe81f3e784727be4583a7c13bb42f198dc5202ecffee0aaee0",
+    "family": "Source Serif 4",
+    "version": "Version 4.005;hotconv 1.1.0;makeotfexe 2.6.0",
+    "copyright": "© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.",
+    "mapped_characters": 920
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-serif-text-semibold.woff2",
+    "upstream_url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/WOFF2/TTF/SourceSerif4-Semibold.ttf.woff2",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "457a13ac92e977d82e376038a2daac7fdb5433610910bf5787bdf6c1c3781865",
+    "family": "Source Serif 4 Semibold",
+    "version": "Version 4.005;hotconv 1.1.0;makeotfexe 2.6.0",
+    "copyright": "© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.",
+    "mapped_characters": 920
+  },
+  {
+    "file": "themes/cutelemon6/fonts/source-serif-text-italic.woff2",
+    "upstream_url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/WOFF2/TTF/SourceSerif4-It.ttf.woff2",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "ca3b17ed1e3e668ffd9e03385cfd46e1b095df783de53710d25d41241496026b",
+    "family": "Source Serif 4",
+    "version": "Version 4.005;hotconv 1.1.0;makeotfexe 2.6.0",
+    "copyright": "© 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’.",
+    "mapped_characters": 919
+  },
+  {
+    "file": "themes/cutelemon6/fonts/open-sans-regular.woff",
+    "upstream_url": "https://raw.githubusercontent.com/typora/typora-default-themes/master/themes/github/400.woff",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "4e7d92a7152ed0ea59dc372f2e8cdf2f0f092ddce74caa0601c0b2b78daa1e8c",
+    "family": "Open Sans",
+    "version": "Version 1.10",
+    "copyright": "Digitized data copyright © 2010-2011, Google Corporation.",
+    "mapped_characters": 883
+  },
+  {
+    "file": "themes/cutelemon6/fonts/open-sans-bold.woff",
+    "upstream_url": "https://raw.githubusercontent.com/typora/typora-default-themes/master/themes/github/700.woff",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "0ddfc4583192715ec5469530efd300265d9fc7898002fdcf21e8fc9fbf0533bb",
+    "family": "Open Sans",
+    "version": "Version 1.10",
+    "copyright": "Digitized data copyright © 2010-2011, Google Corporation.",
+    "mapped_characters": 883
+  },
+  {
+    "file": "themes/cutelemon6/fonts/open-sans-italic.woff",
+    "upstream_url": "https://raw.githubusercontent.com/typora/typora-default-themes/master/themes/github/400i.woff",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "0ec9a60baa65653d03d176e27d8d7ff15d743b957ee7b0eb9e62107eb67aa3d9",
+    "family": "Open Sans",
+    "version": "Version 1.10",
+    "copyright": "Digitized data copyright © 2010-2011, Google Corporation.",
+    "mapped_characters": 883
+  },
+  {
+    "file": "themes/cutelemon6/fonts/open-sans-bold-italic.woff",
+    "upstream_url": "https://raw.githubusercontent.com/typora/typora-default-themes/master/themes/github/700i.woff",
+    "modification": "none; byte-for-byte copy of upstream font",
+    "sha256": "0bd1f342915695cd9e2286bddeb71cf3c56c1675acfe644528d71ee6d0031deb",
+    "family": "Open Sans",
+    "version": "Version 1.10",
+    "copyright": "Digitized data copyright © 2010-2011, Google Corporation.",
+    "mapped_characters": 883
+  }
+]

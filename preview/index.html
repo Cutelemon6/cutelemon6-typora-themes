@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cutelemon6 Trio 主题预览</title>
+<link id="theme-sheet" rel="stylesheet" href="../themes/cutelemon6-day.css">
+<style>
+.preview-tools{box-sizing:border-box;max-width:744px;margin:0 auto;padding:18px 32px 10px;font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--text-color);}
+.preview-tools select{font:inherit;color:var(--text-color);background:var(--cutelemon6-surface);border:1px solid var(--cutelemon6-border);border-radius:4px;padding:6px 10px;}
+.preview-tools a{color:var(--cutelemon6-link);}
+.preview-tools output{font-size:12px;color:var(--cutelemon6-muted);}
+@media print{.preview-tools{display:none;}}
+</style>
+</head>
+<body class="typora-export">
+<div class="preview-tools"><label>主题 <select id="theme-picker"><option value="cutelemon6-day">Cutelemon6 Day · 日常白底</option><option value="cutelemon6-night">Cutelemon6 Night · 日常黑底</option><option value="cutelemon6-editorial">Cutelemon6 Editorial · 暗红衬线</option></select></label><a href="../examples/showcase.md">完整 Markdown 样张</a><output id="font-status">字体载入中…</output></div>
+<main id="write"><h1>日常笔记与长文阅读</h1>
+<p>这份样张用于比较三套主题的真实编辑效果。正文均为 <strong>16 px</strong>，日常白底和黑底采用 Open Sans 与思源黑体，暗红主题采用 Source Serif 4 与思源宋体。</p>
+<h2>1. 文字与超链接</h2>
+<p>今天整理项目资料，记录问题、判断与下一步行动。好的排版应让注意力停留在内容上：中文清楚，英文自然，数字容易辨认。查看 <a href="https://support.typora.io/">Typora 使用文档</a>，或者回到 <a href="#3-%E4%BB%A3%E7%A0%81%E4%B8%8E%E8%A1%8C%E5%86%85%E5%91%BD%E4%BB%A4">本文的代码示例</a>。</p>
+<p>Typography for everyday writing. A clear paragraph helps you read, think, and revise. Markdown, API, GitHub, version 2.5.1 — 0123456789 / Il1 O0 rn m.</p>
+<p>这里包含<strong>需要强调的结论</strong>、<em>英文斜体 emphasis</em>、<del>已废弃的内容</del>和 <code>inline_code()</code>。标点检查：「引号」、（括号）、省略号……、破折号——。</p>
+<blockquote>
+<p>引用保留淡底和左侧边线。我们希望保持适中的信息密度，也能轻松回看之前写下的结论。</p>
+<p>第二段引用用于检查段落之间的距离。</p>
+</blockquote>
+<h3>下一步行动</h3>
+<ul>
+<li>整理资料，记录问题和判断。</li>
+<li>保留依据，让下一次回看更轻松。<ul>
+<li>嵌套列表保持清楚的缩进。</li>
+<li>子项之间不额外拉开大段空白。</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>打开这份样张。</li>
+<li>在主题菜单中依次选择 Cutelemon6 Day、Cutelemon6 Night、Cutelemon6 Editorial。</li>
+<li>比较普通正文、中文粗体和英文数字的效果。</li>
+</ol>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 统一正文大小</li>
+<li><input checked="" disabled="" type="checkbox"> 明确浅色与深色链接颜色</li>
+<li><input disabled="" type="checkbox"> 按实际使用体验微调</li>
+</ul>
+<h2>2. 表格与信息密度</h2>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>正文字体</th>
+<th>链接颜色</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cutelemon6 Day</td>
+<td>Open Sans＋思源黑体</td>
+<td>墨青</td>
+<td>日常白底编辑</td>
+</tr>
+<tr>
+<td>Cutelemon6 Night</td>
+<td>Open Sans＋思源黑体</td>
+<td>石墨蓝的浅色版本</td>
+<td>夜间编辑</td>
+</tr>
+<tr>
+<td>Cutelemon6 Editorial</td>
+<td>Source Serif 4＋思源宋体</td>
+<td>墨青</td>
+<td>暗红标题长文</td>
+</tr>
+</tbody></table>
+<p>较长的表格单元格也应自然换行，不把编辑区域撑得过宽。配置键名例如 <code>max_output_tokens</code> 应与中文解释保持清楚的视觉区分。</p>
+<h2 id="3-代码与行内命令">3. 代码与行内命令</h2>
+<p>行内命令 <code>python3 example.py --mode review</code> 使用等宽字体。多行代码使用独立的背景、较小字号和克制的语法高亮。</p>
+<pre><code class="language-python">from pathlib import Path
+
+def summarize(notes: list[str]) -&gt; dict[str, int]:
+    # 中文注释应保持清楚，不受正文宋体影响。
+    return {
+        &quot;documents&quot;: len(notes),
+        &quot;characters&quot;: sum(len(note) for note in notes),
+    }
+
+print(summarize([&quot;清楚的正文&quot;, &quot;稳定的层次&quot;]))
+</code></pre>
+<pre><code class="language-bash">python3 example.py --mode review --output notes.json
+</code></pre>
+</main>
+<script>
+const select=document.getElementById('theme-picker');
+const sheet=document.getElementById('theme-sheet');
+const status=document.getElementById('font-status');
+let current=0;
+async function loaded(){
+ const token=++current;
+ const serif=select.value==='cutelemon6-editorial';
+ const specs=serif?[[400,'Cutelemon6 Source Serif','Typography'],[500,'Cutelemon6 Serif Han','阅读排版字体'],[600,'Cutelemon6 Serif Han','章节标题']]:[[400,'Cutelemon6 Open Sans','Typography'],[400,'Cutelemon6 Sans Han','阅读排版字体'],[500,'Cutelemon6 Sans Han','章节标题'],[700,'Cutelemon6 Sans Han','粗体']];
+ try{const faces=await Promise.all(specs.map(([weight,family,text])=>document.fonts.load(weight+' 16px "'+family+'"',text)));if(faces.some(x=>!x.length))throw Error('Font unavailable');if(token===current)status.textContent='正文 16 px · 字体已加载';}catch{if(token===current)status.textContent='字体加载失败，请检查主题文件夹是否完整';}
+}
+sheet.addEventListener('load',loaded);
+select.addEventListener('change',()=>{status.textContent='字体载入中…';sheet.href='../themes/'+select.value+'.css';});
+if(sheet.sheet)loaded();
+</script>
+</body>
+</html>
