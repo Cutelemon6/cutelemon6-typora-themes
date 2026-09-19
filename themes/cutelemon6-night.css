@@ -55,6 +55,7 @@
     --cutelemon6-code-border: 0;
     --cutelemon6-code-radius: 0;
     --cutelemon6-code-padding: 10px 10px 10px 30px;
+    --cutelemon6-code-padding-no-lineno: 10px 5px 10px 15px;
     --cutelemon6-code-margin-bottom: 20px;
     --cutelemon6-code-gutter-bg: var(--cutelemon6-code-bg);
     --cutelemon6-code-gutter-border: 0;

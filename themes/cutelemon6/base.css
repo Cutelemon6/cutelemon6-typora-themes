@@ -62,8 +62,11 @@ body, input, textarea, select { accent-color:var(--cutelemon6-link); }
   break-inside:avoid-page;
 }
 #write .md-fences .CodeMirror { background:transparent; color:var(--cutelemon6-code-text,var(--text-color)); font-family:var(--monospace); font-size:inherit; line-height:1.6; }
-/* Typora controls line-number visibility; only adjust its numbered layout. */
+/* Typora controls line-number visibility; keep the two layouts distinct. */
 #write .md-fences.md-fences-with-lineno { padding-left:0; }
+#write .md-fences:not(.md-fences-with-lineno) {
+  padding:var(--cutelemon6-code-padding-no-lineno,var(--cutelemon6-code-padding,12px 14px));
+}
 #write pre code,#write .md-fences code,#write .md-fences tt {
   font-size:inherit; background:transparent; color:inherit; border:0; padding:0;
 }
