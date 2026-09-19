@@ -39,6 +39,18 @@ Keep the font license files, copyright notices, and this attribution when redist
 
 The OFL's [WOFF guidance](https://openfontlicense.org/ofl-faq/) distinguishes unchanged compression from modified font software. Shipping upstream binaries unchanged keeps that distinction explicit in this repository. Apache 2.0's [redistribution conditions](https://www.apache.org/licenses/LICENSE-2.0#redistribution) apply to the bundled Open Sans version.
 
+## Preview highlighter / 预览着色器
+
+The browser preview bundles the unmodified standalone run-mode adapter and Python, shell, and JavaScript modes from [CodeMirror 5.65.16](https://www.npmjs.com/package/codemirror/v/5.65.16). CodeMirror is copyright Marijn Haverbeke and contributors and uses [its own MIT license](preview/vendor/codemirror/LICENSE), which is included beside the files. The theme installation folder does not contain this preview dependency; Typora uses its own editor.
+
+浏览器预览包含 CodeMirror 5.65.16 的原始 standalone run-mode 适配器及 Python、Shell、JavaScript 模式，版权归 Marijn Haverbeke 和贡献者所有，并保留其自身 MIT 许可。安装到 Typora 的主题文件夹不包含这项预览依赖，Typora 继续使用自身的编辑器。
+
+## Styling reference / 样式参考
+
+The code font stack and the Night code-block palette reference [Typora's built-in Night theme](https://theme.typora.io/theme/Night/). This project implements these choices through its own shared CSS variables and rules. It does not bundle Night's source CSS, icons, or the proprietary Monaco/Consolas fonts; the font stack uses fonts already available on the reader's system.
+
+代码字体栈及 Night 的代码块配色参考 Typora 内置 Night，本项目以自己的共用变量与样式规则实现。仓库不分发 Night 的原始 CSS、图标或 Monaco／Consolas 等专有字体；字体栈调用读者系统已有的字体。
+
 ## Names and acknowledgments / 名称与致谢
 
 Typora, Adobe, Google, and the font family names identify the relevant products and sources. Their owners do not sponsor or endorse this project. This repository does not include the Typora application, another theme's CSS, third-party theme screenshots, or externally supplied document content.

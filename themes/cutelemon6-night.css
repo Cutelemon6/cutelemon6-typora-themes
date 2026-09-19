@@ -47,6 +47,46 @@
   --window-border: 1px solid var(--cutelemon6-border);
 }
 
+/* Night-inspired code palette, with a darker surface for Cutelemon6. */
+@media screen {
+  :root {
+    --cutelemon6-code-bg: #27292d;
+    --cutelemon6-code-text: #b8bfc6;
+    --cutelemon6-code-border: 0;
+    --cutelemon6-code-radius: 0;
+    --cutelemon6-code-padding: 10px 10px 10px 30px;
+    --cutelemon6-code-margin-bottom: 20px;
+    --cutelemon6-code-gutter-bg: var(--cutelemon6-code-bg);
+    --cutelemon6-code-gutter-border: 0;
+    --cutelemon6-code-selection-bg: #4a89dc;
+    --cutelemon6-code-selection-text: #ffffff;
+    --cutelemon6-inline-code-bg: rgba(0,0,0,.05);
+    --cutelemon6-inline-code-border: 0;
+    --cutelemon6-inline-code-text: #b8bfc6;
+    --cutelemon6-code-keyword: #c88fd0;
+    --cutelemon6-code-comment: #da924a;
+    --cutelemon6-code-string: #d26b6b;
+    --cutelemon6-code-string-2: #ff5500;
+    --cutelemon6-code-function: #8d8df0;
+    --cutelemon6-code-number: #64ab8f;
+    --cutelemon6-code-atom: #84b6cb;
+    --cutelemon6-code-operator: #b8bfc6;
+    --cutelemon6-code-property: #b8bfc6;
+    --cutelemon6-code-variable-2: #9fbad5;
+    --cutelemon6-code-variable-3: #1cc685;
+    --cutelemon6-code-tag: #7df46a;
+    --cutelemon6-code-attribute: #7575e4;
+    --cutelemon6-code-builtin: #f3b3f8;
+    --cutelemon6-code-meta: #b7b3b3;
+    --cutelemon6-code-bracket: #999977;
+    --cutelemon6-code-quote: #57ac57;
+    --cutelemon6-code-link: #d3d3ef;
+    --cutelemon6-code-rule: #d8d5d5;
+    --cutelemon6-code-negative: #d95050;
+    --cutelemon6-code-positive: #50e650;
+  }
+}
+
 @media print {
   :root {
   --bg-color: #ffffff;

@@ -62,6 +62,8 @@ python3 example.py --mode review --output notes.json
 
 ### 公式与脚注
 
+
+
 行内公式 $E = mc^2$ 与正文保持适中的距离。块公式用于检查数学渲染是否沿用 Typora 的原生排版：
 
 $$

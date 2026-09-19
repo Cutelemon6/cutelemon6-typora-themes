@@ -8,7 +8,7 @@ Our preference is for clear, restrained typography with a slight bookish quality
 
 ## 1. Establish the scale with ordinary paragraphs
 
-Set several consecutive paragraphs before designing headings and decoration. All three themes begin at 16 px, with a text column of about 680 px at its maximum width. This accommodates a useful amount of information while leaving room for Chinese and Latin text on the same line.
+Set paragraphs, code, and tables together before designing headings and decoration. All three themes begin at 16 px. On a wide desktop, the editing area takes 75% of its available container, giving technical material more horizontal room without enlarging the type. At 1000 px and below it uses the full available width. Long prose and wide technical material place different demands on line length; the width remains a user-adjustable choice.
 
 A line height of 1.65 gives the sans-serif themes an editing-oriented density. The serif theme uses 1.70 to allow slightly more space for its finer details. A 12 px paragraph gap and 4 px list-item gap keep boundaries visible while maintaining a continuous reading rhythm.
 
@@ -40,7 +40,7 @@ Links always retain a fine underline. Their purpose remains visible even when a 
 
 ## 5. Integrate technical material with the prose
 
-Code uses 13.5 px monospace text, a tinted surface, and a light border. Token colors distinguish comments, strings, keywords, and numbers; the block as a whole stays close to the surrounding page's tonal range. Inline code receives enough background and edge definition to remain recognizable without turning a sentence into a sequence of prominent boxes.
+Code uses the built-in Night monospace stack, led by Monaco on macOS, at 13.5 px. Day and Editorial retain a tinted surface and light border. Night uses a flat dark-gray block and a token palette informed by Typora’s built-in Night: purple keywords, red strings, orange comments, and blue-violet definitions. Token colors distinguish roles while the block stays within the surrounding page’s tonal range. Inline code receives enough background and edge definition to remain recognizable without turning a sentence into a sequence of prominent boxes.
 
 Tables use 15 px text, a light grid, and very subtle alternating rows. They should support comparisons across columns while retaining a visual weight close to the paragraphs around them.
 

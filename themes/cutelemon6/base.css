@@ -1,14 +1,17 @@
 /* Cutelemon6 Trio: common layout. Imported by the three theme entry files. */
+:root {
+  --cutelemon6-content-max-width:75%;
+  --monospace:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
+}
 html { font-size:16px; background:var(--bg-color); color:var(--text-color); }
 body {
   background:var(--bg-color); color:var(--text-color);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;
-  --monospace:"SFMono-Regular",Menlo,Consolas,"Liberation Mono","Cutelemon6 Sans Han",monospace;
 }
 body, input, textarea, select { accent-color:var(--cutelemon6-link); }
 ::selection { background:var(--select-text-bg-color); color:var(--select-text-font-color); }
 #write {
-  box-sizing:border-box; max-width:744px; margin:0 auto;
+  box-sizing:border-box; width:100%; max-width:var(--cutelemon6-content-max-width); margin:0 auto;
   padding:32px 32px 96px; color:var(--text-color);
   font:var(--cutelemon6-body-weight) 1rem/var(--cutelemon6-line-height) var(--cutelemon6-body-font);
   font-optical-sizing:auto; font-synthesis:none;
@@ -48,32 +51,50 @@ body, input, textarea, select { accent-color:var(--cutelemon6-link); }
 #write blockquote blockquote { margin:.625rem 0; background:transparent; }
 #write code,#write tt {
   font-family:var(--monospace); font-size:.84375rem;
-  color:var(--text-color); background:var(--cutelemon6-surface);
-  border:1px solid var(--cutelemon6-border); border-radius:3px; padding:1px 4px;
+  color:var(--cutelemon6-inline-code-text,var(--text-color)); background:var(--cutelemon6-inline-code-bg,var(--cutelemon6-surface));
+  border:var(--cutelemon6-inline-code-border,1px solid var(--cutelemon6-border)); border-radius:3px; padding:1px 4px;
 }
 #write .md-fences,#write pre.md-meta-block,.typora-export #write pre {
-  margin:.875rem 0 1rem; padding:12px 14px;
+  margin:.875rem 0 var(--cutelemon6-code-margin-bottom,1rem); padding:var(--cutelemon6-code-padding,12px 14px);
   font-family:var(--monospace); font-size:.84375rem; line-height:1.6;
-  color:var(--text-color); background:var(--cutelemon6-surface);
-  border:1px solid var(--cutelemon6-border); border-radius:5px;
+  color:var(--cutelemon6-code-text,var(--text-color)); background:var(--cutelemon6-code-bg,var(--cutelemon6-surface));
+  border:var(--cutelemon6-code-border,1px solid var(--cutelemon6-border)); border-radius:var(--cutelemon6-code-radius,5px);
   break-inside:avoid-page;
 }
-#write .md-fences .CodeMirror { background:transparent; color:var(--text-color); font-family:var(--monospace); font-size:inherit; line-height:1.6; }
+#write .md-fences .CodeMirror { background:transparent; color:var(--cutelemon6-code-text,var(--text-color)); font-family:var(--monospace); font-size:inherit; line-height:1.6; }
+/* Typora controls line-number visibility; only adjust its numbered layout. */
+#write .md-fences.md-fences-with-lineno { padding-left:0; }
 #write pre code,#write .md-fences code,#write .md-fences tt {
   font-size:inherit; background:transparent; color:inherit; border:0; padding:0;
 }
 .typora-export #write pre { overflow-x:auto; }
-#write .CodeMirror-gutters { background:transparent; border-right:1px solid var(--cutelemon6-border); }
+#write .CodeMirror-gutters { background:var(--cutelemon6-code-gutter-bg,transparent); border-right:var(--cutelemon6-code-gutter-border,1px solid var(--cutelemon6-border)); }
 #write .CodeMirror-linenumber { color:var(--cutelemon6-muted); }
-#write .CodeMirror-selected { background:var(--select-text-bg-color); }
-#write .CodeMirror-cursor { border-left-color:var(--text-color); }
+#write .CodeMirror-selected { background:var(--cutelemon6-code-selection-bg,var(--select-text-bg-color)); }
+#write .CodeMirror-selectedtext { color:var(--cutelemon6-code-selection-text,inherit); }
+#write .CodeMirror-cursor { border-left-color:var(--cutelemon6-code-text,var(--text-color)); }
 #write .cm-comment { color:var(--cutelemon6-code-comment); font-style:normal; }
-#write .cm-keyword,#write .cm-operator { color:var(--cutelemon6-code-keyword); }
-#write .cm-string,#write .cm-string-2 { color:var(--cutelemon6-code-string); }
-#write .cm-number,#write .cm-atom { color:var(--cutelemon6-code-number); }
-#write .cm-def,#write .cm-variable-2,#write .cm-property { color:var(--cutelemon6-code-function); }
-#write .cm-tag,#write .cm-builtin,#write .cm-qualifier { color:var(--cutelemon6-code-keyword); }
-#write .cm-attribute { color:var(--cutelemon6-code-function); }
+#write .cm-keyword { color:var(--cutelemon6-code-keyword); }
+#write .cm-operator { color:var(--cutelemon6-code-operator,var(--cutelemon6-code-keyword)); }
+#write .cm-string { color:var(--cutelemon6-code-string); }
+#write .cm-string-2 { color:var(--cutelemon6-code-string-2,var(--cutelemon6-code-string)); }
+#write .cm-number { color:var(--cutelemon6-code-number); }
+#write .cm-atom { color:var(--cutelemon6-code-atom,var(--cutelemon6-code-number)); }
+#write .cm-def,#write .cm-header { color:var(--cutelemon6-code-function); }
+#write .cm-variable { color:var(--cutelemon6-code-text,var(--text-color)); }
+#write .cm-variable-2 { color:var(--cutelemon6-code-variable-2,var(--cutelemon6-code-function)); }
+#write .cm-variable-3 { color:var(--cutelemon6-code-variable-3,var(--cutelemon6-code-function)); }
+#write .cm-property { color:var(--cutelemon6-code-property,var(--cutelemon6-code-function)); }
+#write .cm-tag { color:var(--cutelemon6-code-tag,var(--cutelemon6-code-keyword)); }
+#write .cm-builtin { color:var(--cutelemon6-code-builtin,var(--cutelemon6-code-keyword)); }
+#write .cm-meta,#write .cm-qualifier { color:var(--cutelemon6-code-meta,var(--cutelemon6-code-keyword)); }
+#write .cm-attribute { color:var(--cutelemon6-code-attribute,var(--cutelemon6-code-function)); }
+#write .cm-bracket { color:var(--cutelemon6-code-bracket,var(--text-color)); }
+#write .cm-quote { color:var(--cutelemon6-code-quote,var(--cutelemon6-code-string)); }
+#write .cm-link { color:var(--cutelemon6-code-link,var(--cutelemon6-link)); }
+#write .cm-hr { color:var(--cutelemon6-code-rule,var(--cutelemon6-muted)); }
+#write .cm-negative { color:var(--cutelemon6-code-negative,var(--cutelemon6-code-error)); }
+#write .cm-positive { color:var(--cutelemon6-code-positive,var(--cutelemon6-code-string)); }
 #write .cm-error { color:var(--cutelemon6-code-error); background:transparent; }
 #write .md-lang { color:var(--cutelemon6-muted); }
 #write table { width:100%; margin:1rem 0; border-collapse:collapse; border-spacing:0; font-size:.9375rem; line-height:1.55; }
@@ -99,6 +120,9 @@ body, input, textarea, select { accent-color:var(--cutelemon6-link); }
 .md-search-hit { background:var(--search-hit-bg-color); }
 .md-search-hit.md-search-select { background:var(--search-select-bg-color); }
 .ty-tooltip,.md-hover-tip,.md-image-btn,.md-image-btn:hover { background:var(--cutelemon6-surface); color:var(--text-color); }
+@media screen and (max-width:1000px) {
+  #write { max-width:100%; }
+}
 @media(max-width:600px) {
   #write { padding:24px 20px 64px; }
   #write th,#write td { padding:6px 8px; }
@@ -106,7 +130,7 @@ body, input, textarea, select { accent-color:var(--cutelemon6-link); }
 @media print {
   html { font-size:14px; }
   html,body { background:#fff!important; color:#30363d!important; }
-  #write { max-width:none; padding:0; margin:0; color:#30363d; }
+  #write { width:auto; max-width:none; padding:0; margin:0; color:#30363d; }
   #write h1,#write h2,#write h3,#write h4 { break-after:avoid-page; page-break-after:avoid; }
   #write p,#write li { orphans:3; widows:3; }
   #write img,#write tr { break-inside:avoid-page; }

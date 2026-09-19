@@ -4,7 +4,9 @@
 
 Three Typora themes for everyday writing and longer reading: a clean light theme, a balanced dark theme, and a serif editorial theme with restrained red headings.
 
-All three start with **16 px body text**, a **680 px text column**, and a **28 / 22 / 18 px heading scale**. Their character comes from type, spacing, and a small number of deliberate color choices.
+This branch is a review draft. The screenshots below show the initial version; extended Markdown formatting still awaits review. See the [review TODO](TODO.md).
+
+All three start with **16 px body text**, a **75%-wide editing area on desktop**, and a **28 / 22 / 18 px heading scale**. Their character comes from type, spacing, and a small number of deliberate color choices.
 
 | Day | Night | Editorial |
 | --- | --- | --- |
@@ -23,7 +25,7 @@ All three start with **16 px body text**, a **680 px text column**, and a **28 /
 
 Day and Night are a working pair. Editorial offers a more bookish rhythm while keeping the same compact heading scale and text column. Its chapter headings use dark red `#963D36`.
 
-The Chinese fonts use the mainland Simplified Chinese glyph convention. Fonts are bundled and loaded locally; installation does not require adding them to the operating system's font library. Code uses the available system monospace font, such as Menlo or Consolas.
+The Chinese fonts use the mainland Simplified Chinese glyph convention. Fonts are bundled and loaded locally; installation does not require adding them to the operating system's font library. Code follows the built-in Night font stack: Monaco, Consolas, Andale Mono, DejaVu Sans Mono, then the system monospace fallback. Monaco is used when available on macOS; these system fonts are not bundled.
 
 ## Install
 
@@ -57,11 +59,12 @@ Three fixed choices keep the theme menu small. All share one layout file, so a s
 
 ## Layout details
 
+- **Width:** 75% of the available editing container, including 32 px padding on each side. At 1000 px and below, the area uses the full available width; print uses the page width.
 - **Headings:** left aligned; a thin divider under H2; 32 px above and 10 px below H2.
 - **Paragraphs:** 12 px after each paragraph; 4 px between list items.
 - **Links:** a visible 1 px underline, strengthened on hover; visited links keep the same color.
 - **Quotes:** a quiet tinted surface and a left border, with normal upright text.
-- **Code:** 13.5 px monospace text, 1.6 line height, a modest border, and CodeMirror token colors.
+- **Code:** 13.5 px monospace text with 1.6 line height. Night uses a flat `#27292d` surface, purple keywords, red strings, orange comments, and blue-violet definitions inspired by Typora’s built-in Night. Day and Editorial retain their existing light code treatment. Line numbers follow Typora’s Markdown → Code Fences setting; the theme does not force them on or off.
 - **Tables:** 15 px text, light borders, and subtle alternating rows.
 - **Print:** white paper in all three themes, 10.5 pt body text by default. Editorial retains its red chapter headings. Paper size and margins remain under Typora's export controls.
 
@@ -74,10 +77,7 @@ For personal overrides that survive updates, use Typora's [theme-specific user C
 ```css
 :root {
   --cutelemon6-link: #0f6b68;
-}
-
-#write {
-  max-width: 744px; /* includes 32 px of padding on each side */
+  --cutelemon6-content-max-width: 75%; /* includes the editor’s side padding */
 }
 ```
 
@@ -92,7 +92,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 # Open http://127.0.0.1:8000/preview/
 ```
 
-The browser preview covers basic Markdown layout. Formulas, footnotes, editor interactions, and CodeMirror syntax highlighting should be checked in Typora using the full specimen.
+The browser preview covers basic Markdown layout and tokenizes Python, shell, JavaScript, and JSON with CodeMirror 5. Native editor interactions, formulas, footnotes, and final syntax-highlighting behavior should still be checked in Typora using the full specimen.
 
 The shipped CSS, local font loading, 16 px body size, three palettes, and basic Markdown layout have been checked in a macOS browser. **Native Typora editing and PDF pagination still need verification; Windows and Linux have not been tested.** Platform monospace fonts and font rasterization can change the appearance slightly.
 
@@ -106,6 +106,6 @@ python3 scripts/check.py
 
 The original theme CSS, documentation, specimen, preview page, and scripts are licensed under [MIT](LICENSE).
 
-**Bundled fonts keep their own licenses and are not covered by MIT.** Source Han Sans, Source Han Serif, and Source Serif 4 are distributed under SIL OFL 1.1; the bundled Open Sans version uses Apache 2.0. The repository ships upstream font binaries unchanged, with their notices and licenses. See [third-party notices](THIRD_PARTY_NOTICES.md) and the [font manifest](font-manifest.json) for sources and SHA-256 values.
+**Bundled fonts keep their own licenses and are not covered by MIT.** The browser preview also includes CodeMirror 5.65.16 under its own MIT notice; it is not needed by the installed themes. Source Han Sans, Source Han Serif, and Source Serif 4 are distributed under SIL OFL 1.1; the bundled Open Sans version uses Apache 2.0. The repository ships upstream font binaries unchanged, with their notices and licenses. See [third-party notices](THIRD_PARTY_NOTICES.md) and the [font manifest](font-manifest.json) for sources and SHA-256 values.
 
 This is an independent theme project. Typora and the font authors do not sponsor or endorse it.

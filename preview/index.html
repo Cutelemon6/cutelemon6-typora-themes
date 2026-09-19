@@ -6,11 +6,13 @@
 <title>Cutelemon6 Trio 主题预览</title>
 <link id="theme-sheet" rel="stylesheet" href="../themes/cutelemon6-day.css">
 <style>
-.preview-tools{box-sizing:border-box;max-width:744px;margin:0 auto;padding:18px 32px 10px;font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--text-color);}
+body{margin:0;}
+.preview-tools{box-sizing:border-box;width:100%;max-width:var(--cutelemon6-content-max-width,75%);margin:0 auto;padding:18px 32px 10px;font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--text-color);}
 .preview-tools select{font:inherit;color:var(--text-color);background:var(--cutelemon6-surface);border:1px solid var(--cutelemon6-border);border-radius:4px;padding:6px 10px;}
 .preview-tools a{color:var(--cutelemon6-link);}
 .preview-tools output{font-size:12px;color:var(--cutelemon6-muted);}
 @media print{.preview-tools{display:none;}}
+@media screen and (max-width:1000px){.preview-tools{max-width:100%;}}
 </style>
 </head>
 <body class="typora-export">
@@ -90,6 +92,11 @@ print(summarize([&quot;清楚的正文&quot;, &quot;稳定的层次&quot;]))
 <pre><code class="language-bash">python3 example.py --mode review --output notes.json
 </code></pre>
 </main>
+<script src="vendor/codemirror/runmode-standalone.js"></script>
+<script src="vendor/codemirror/python.js"></script>
+<script src="vendor/codemirror/shell.js"></script>
+<script src="vendor/codemirror/javascript.js"></script>
+<script src="highlight.js"></script>
 <script>
 const select=document.getElementById('theme-picker');
 const sheet=document.getElementById('theme-sheet');
